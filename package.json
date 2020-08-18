@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/hargwit/vanilla-create-reducer/issues"
   },
-  "homepage": "https://github.com/hargwit/vanilla-create-reducer#readme"
+  "homepage": "https://github.com/hargwit/vanilla-create-reducer#readme",
+  "devDependencies": {
+    "tape": "^5.0.1"
+  }
 }

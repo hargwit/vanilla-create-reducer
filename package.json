@@ -4,14 +4,14 @@
   "description": "Create a reducer from an object of action types and reducer functions. To be used with any JS framework.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hargwit/vanilla-create-reducer.git"
   },
   "keywords": [
-    "javscript",
+    "javascript",
     "reducer"
   ],
   "author": "Harry G. Withers",

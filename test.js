@@ -59,3 +59,22 @@ test("throws on action types that are not recognized", (t) => {
 
   t.end();
 });
+
+test("throws when incorrect action mapping object passed", (t) => {
+  // Throws on undefined action mapping passed
+  t.throws(() => createReducer(), "undefined action mapping object");
+
+  // Throws on null action mapping passed
+  t.throws(() => createReducer(null), "null action mapping object");
+
+  // Throws on primitives
+  t.throws(
+    () => createReducer("string instead of action mapping object"),
+    "primitive action mapping object"
+  );
+
+  // Throws on array
+  t.throws(() => createReducer([]), "array action mapping object");
+
+  t.end();
+});

@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/hargwit/vanilla-create-reducer#readme",
   "devDependencies": {
+    "sinon": "^9.0.3",
     "tape": "^5.0.1"
   }
 }

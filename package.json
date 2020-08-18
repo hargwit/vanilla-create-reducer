@@ -1,0 +1,23 @@
+{
+  "name": "vanilla-create-reducer",
+  "version": "1.0.0",
+  "description": "Create a reducer from an object of action types and reducer functions. To be used with any JS framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hargwit/vanilla-create-reducer.git"
+  },
+  "keywords": [
+    "javscript",
+    "reducer"
+  ],
+  "author": "Harry G. Withers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hargwit/vanilla-create-reducer/issues"
+  },
+  "homepage": "https://github.com/hargwit/vanilla-create-reducer#readme"
+}

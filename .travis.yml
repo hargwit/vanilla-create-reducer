@@ -1,3 +1,19 @@
 language: node_js
 node_js:
-  - 14
+  - "14"
+  - "13"
+  - "12"
+  - "11"
+  - "10"
+
+script: echo "Running tests against $(node -v) ..."
+# jobs:
+#   include:
+#     - stage: npm release
+#       if: branch = master
+#       node_js: "14
+#       script: echo "Deploying to npm ..."
+#       deploy:
+#         provider: npm
+#         api_key: $NPM_API_KEY
+#         on: deploy-npm-release

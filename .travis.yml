@@ -5,15 +5,13 @@ node_js:
   - "12"
   - "11"
   - "10"
-
 script: echo "Running tests against $(node -v) ..."
-# jobs:
-#   include:
-#     - stage: npm release
-#       if: branch = master
-#       node_js: "14
-#       script: echo "Deploying to npm ..."
-#       deploy:
-#         provider: npm
-#         api_key: $NPM_API_KEY
-#         on: deploy-npm-release
+
+deploy:
+  provider: npm
+  email: harrygwithers@gmail.com
+  api_key:
+    secure: AI5fU3lSiP+a6eP0AnPx1NjU4Czk0BhWVocegKfvokB1gC44Q0DRzqOB4MHy9S9hdV7OcR869rqPmDZu324lNxNw05IP5CidumGtNLMWhLbeAlCoYmqk1J6weTy9vDa6DtLbP7XMsRTgq8Ys0K6VuruM6VhUWt188mpd+Nbr3Y4I14iFG6AGCrBwpIjTUNgCs3waz7PFjTjKWQd5brsUmLIDzFFYVYebk69hC6KOtXFxevCfIVJ0AV7xPFOY7kI8SSyOSOrDMlEEZ7RC7EWA3IQKaSmwTQx6Q5w+3VYhMiTgb3CloZratTSRiY1XRd59jjMugFCaFLsQWrUyzi6HXlX2/xP7he/rIZHp3PkKvIHnzkL09RIaZLD8EUYOh+F+pAEgkeqbwqec28Vg03VXoVhOmYZZOuxttWjozt1rpeYMnJ3Q7ukwUlOiB5t5Ya3+tOYm7VGCofnlxa9fR6sIiC1AWT5ulCAlClqcDlls1S3U2ZTY45RvvvDxPbyrNtEVVW5a8Qk3+PcDKi2PjgSHnuUeiSITRFHZHy0znTlEREN0SNztYCrhCjmT1fcmVxHxuCvbwgiteh5b2JwlkK20LDcvmYbLz2naSskIzFBA6saOMd103XKeMqXqGyolgLgQ9LoPnS6a21TZLzEk/1esjWzMOd1XEHOsN6+j0ZRkEPA=
+  on:
+    branch: master
+  skip_cleanup: "true"

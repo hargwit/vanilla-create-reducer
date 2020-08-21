@@ -5,9 +5,12 @@ node_js:
   - "12"
   - "11"
   - "10"
+
+install:
+  - npm install -g codecov istanbul
 script:
   - echo "Running tests against $(node -v) ..."
-  - npx istanbul cover node_modules/.bin/tape ./test.js
+  - istanbul cover ./node_modules/.bin/tape ./test.js
   - bash <(curl -s https://codecov.io/bash)
 
 deploy:

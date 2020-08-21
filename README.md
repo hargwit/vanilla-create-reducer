@@ -1,4 +1,4 @@
-# create-vanilla-reducer ![Travis CI badge](https://travis-ci.com/hargwit/vanilla-create-reducer.svg?branch=master)
+# create-vanilla-reducer ![Travis CI badge](https://travis-ci.com/hargwit/vanilla-create-reducer.svg?branch=master) [![codecov](https://codecov.io/gh/hargwit/vanilla-create-reducer/branch/master/graph/badge.svg)](https://codecov.io/gh/hargwit/vanilla-create-reducer) [![npm version](https://badge.fury.io/js/vanilla-create-reducer.svg)](https://badge.fury.io/js/vanilla-create-reducer)
 
 Create a reducer from an object of reducer functions keyed by the action type. To be used with any JS framework.
 
